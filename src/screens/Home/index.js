@@ -1,14 +1,12 @@
 import React from 'react';
-import { View } from 'react-native';
+import { SafeAreaView } from 'react-native';
 import List from '../../components/List';
-
-// import { Container } from './styles';
 
 const Home = ({navigation}) => {
   return (
-    <View>
+    <SafeAreaView>
       <List navigation={navigation}/>
-    </View>
+    </SafeAreaView>
   )
 }
 

@@ -1,19 +1,18 @@
 import React from 'react';
-import { View } from 'react-native';
+import { SafeAreaView } from 'react-native';
 import ListHeader from '../../components/ListHeader';
 import {products} from "../../constants/content"
 
 const Infos = () => {
   return (
-    <View>
+    <SafeAreaView>
       <ListHeader products={products} />
-    </View>
+    </SafeAreaView>
   )
 }
 
 Infos.sharedElements = () => {
   return products.map((item) => `item.${item.id}.icon`)
 }
-
 
 export default Infos;
