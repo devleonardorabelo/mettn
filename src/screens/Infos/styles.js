@@ -13,6 +13,7 @@ export default StyleSheet.create({
   },
   backButton: {
     position: 'absolute',
+    zIndex: 10,
     left: 24,
     top: Platform.OS === 'ios' ? 48 : 24,
   },

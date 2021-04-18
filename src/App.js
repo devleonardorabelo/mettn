@@ -16,8 +16,8 @@ const App = () => {
         screenOptions={() => ({
           headerShown: false,
           transitionSpec: {
-            open: {animation: 'timing', config: {duration: 500}},
-            close: {animation: 'timing', config: {duration: 500}},
+            open: {animation: 'timing', config: {duration: 300}},
+            close: {animation: 'timing', config: {duration: 300}},
           },
           gestureEnabled: false,
           cardStyleInterpolator: ({current: {progress}}) => {
