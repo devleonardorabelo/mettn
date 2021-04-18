@@ -22,6 +22,7 @@ export const persons = [
   {
     id: '1',
     image: IMAGES.people,
+    images: [IMAGES.people, IMAGES.people2, IMAGES.people3],
     name: 'Sophia, 20',
     distance: '6km near you',
     about:
@@ -30,6 +31,7 @@ export const persons = [
   {
     id: '2',
     image: IMAGES.people2,
+    images: [IMAGES.people, IMAGES.people2, IMAGES.people3],
     name: 'Emma, 24',
     distance: '9km near you',
     about:
@@ -38,6 +40,7 @@ export const persons = [
   {
     id: '3',
     image: IMAGES.people3,
+    images: [IMAGES.people, IMAGES.people2, IMAGES.people3],
     name: 'Ana, 21',
     distance: '12km near you',
     about:

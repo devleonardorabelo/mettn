@@ -19,7 +19,7 @@ export default StyleSheet.create({
   },
   imageContainer: {
     width: width,
-    height: height / 2,
+    height: height / 1.5,
   },
   content: {
     paddingTop: 36,
