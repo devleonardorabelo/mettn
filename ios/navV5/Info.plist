@@ -51,5 +51,10 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Sansation_Regular.ttf</string>
+		<string>Sansation_Bold.ttf</string>
+	</array>
 </dict>
 </plist>
