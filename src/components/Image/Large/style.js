@@ -10,6 +10,9 @@ export default StyleSheet.create({
     flexDirection: 'column-reverse',
   },
   container: {
+    flex: 1,
+  },
+  backImage: {
     borderRadius: 24,
   },
   content: {

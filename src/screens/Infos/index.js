@@ -5,10 +5,11 @@ import {CircularButton, Footer} from '../../components';
 
 import styles from './styles';
 
-const Infos = ({navigation}) => {
+const Infos = ({navigation, route}) => {
+  const {item} = route.params;
   return (
     <View style={styles.container}>
-      <ImageBackground style={styles.imageContainer} source={IMAGES.people}>
+      <ImageBackground style={styles.imageContainer} source={item.image}>
         <CircularButton
           image={IMAGES.back}
           onPress={() => navigation.pop()}
@@ -18,10 +19,10 @@ const Infos = ({navigation}) => {
       <View style={styles.content}>
         <View style={styles.mb16}>
           <View style={styles.nameContainer}>
-            <Text style={styles.h1}>Estephany, 20</Text>
+            <Text style={styles.h1}>{item.name}</Text>
             <View style={styles.onlineDot} />
           </View>
-          <Text style={styles.strong}>6km near you</Text>
+          <Text style={styles.strong}>{item.distance}</Text>
         </View>
         <Text style={styles.p}>
           Lotem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum

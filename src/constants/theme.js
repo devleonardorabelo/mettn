@@ -1,3 +1,5 @@
+import {Dimensions} from 'react-native';
+
 export const COLORS = {
   primaryPurple: '#C93DFA',
   primaryPurple_50: '#C93DFA80',
@@ -49,3 +51,7 @@ export const ELEMENTS = {
     marginLeft: 8,
   },
 };
+
+const {width, height} = Dimensions.get('window');
+
+export {width as WIDTH, height as HEIGHT};

@@ -1,9 +1,11 @@
 import React from 'react';
 import {View, Image, StatusBar} from 'react-native';
+import Carousel from 'react-native-snap-carousel';
 import {IMAGES} from '../../assets';
 
 import {Header, CircularButton, LargeImage, Footer} from '../../components';
-import {COLORS} from '../../constants/theme';
+import {persons} from '../../constants/content';
+import {COLORS, WIDTH} from '../../constants/theme';
 
 import style from './style';
 
@@ -21,14 +23,22 @@ const Home = ({navigation}) => {
           />
         }
       />
-      <View style={style.content}>
-        <LargeImage
-          image={IMAGES.people}
-          title="Sophia, 20"
-          subtitle="6km near you"
-        />
-      </View>
-      <Footer rightOnPress={() => navigation.push('Infos')} />
+      <Carousel
+        sliderWidth={WIDTH}
+        itemWidth={WIDTH - 48}
+        layout="stack"
+        layoutCardOffset="12"
+        data={persons}
+        renderItem={({item}) => (
+          <LargeImage
+            image={item.image}
+            title={item.name}
+            subtitle={item.distance}
+            onPress={() => navigation.push('Infos', {item})}
+          />
+        )}
+      />
+      <Footer />
     </View>
   );
 };
