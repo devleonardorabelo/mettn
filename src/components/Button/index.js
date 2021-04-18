@@ -1,1 +1,1 @@
-export {default as IconButton} from './Icon';
+export {default as CircularButton} from './Circular';

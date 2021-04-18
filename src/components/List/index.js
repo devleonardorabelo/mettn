@@ -12,20 +12,18 @@ const List = ({navigation}) => {
       data={products}
       contentContainerStyle={style.flatList}
       renderItem={({item, index}) => (
-        <View>
-          <SharedElement id={`item.${item.id}.icon`}>
-            <TouchableOpacity
-              style={style.container}
-              onPress={() => navigation.push('Infos', {item})}
-              key={index}>
-              <Image
-                resizeMode="contain"
-                style={style.itemContainer}
-                source={{uri: item.image}}
-              />
-            </TouchableOpacity>
-          </SharedElement>
-        </View>
+        <SharedElement id={`item.${item.id}.icon`}>
+          <TouchableOpacity
+            style={style.container}
+            onPress={() => navigation.push('Infos', {item})}
+            key={index}>
+            <Image
+              resizeMode="contain"
+              style={style.itemContainer}
+              source={{uri: item.image}}
+            />
+          </TouchableOpacity>
+        </SharedElement>
       )}
     />
   );

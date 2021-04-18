@@ -10,4 +10,12 @@ export default StyleSheet.create({
     borderRadius: 32,
     backgroundColor: COLORS.secondaryPurple,
   },
+  largeContainer: {
+    height: 96,
+    width: 96,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 48,
+    backgroundColor: COLORS.secondaryPurple,
+  },
 });
