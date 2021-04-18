@@ -18,4 +18,8 @@ export default StyleSheet.create({
     borderRadius: 48,
     backgroundColor: COLORS.secondaryPurple,
   },
+  image: {
+    maxHeight: 64,
+    maxWidth: 64,
+  },
 });

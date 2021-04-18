@@ -4,6 +4,7 @@ import {createSharedElementStackNavigator} from 'react-navigation-shared-element
 
 import Home from './screens/Home';
 import Infos from './screens/Infos';
+import Chat from './screens/Chat';
 
 const Stack = createSharedElementStackNavigator();
 
@@ -29,6 +30,7 @@ const App = () => {
         })}>
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Infos" component={Infos} />
+        <Stack.Screen name="Chat" component={Chat} />
       </Stack.Navigator>
     </NavigationContainer>
   );

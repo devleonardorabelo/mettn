@@ -10,7 +10,6 @@ export default StyleSheet.create({
   },
   content: {
     width: '33.33333%',
-    justifyContent: 'center',
   },
   contentLeft: {
     alignItems: 'flex-start',
