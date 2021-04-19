@@ -18,7 +18,7 @@ const Home = ({navigation}) => {
         centerChildren={<Image source={IMAGES.logo} />}
         rightChildren={
           <CircularButton
-            onPress={() => navigation.push('Chat')}
+            onPress={() => navigation.push('ChatList')}
             image={IMAGES.chat}
           />
         }

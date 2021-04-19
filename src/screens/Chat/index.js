@@ -16,7 +16,8 @@ import {COLORS} from '../../constants/theme';
 
 import style from './styles';
 
-const Home = ({navigation}) => {
+const Home = ({navigation, route}) => {
+  const {item} = route.params;
   return (
     <View style={style.container}>
       <StatusBar backgroundColor={COLORS.darkPurple} barStyle="light-content" />
@@ -31,12 +32,12 @@ const Home = ({navigation}) => {
           <View style={style.profileContainer}>
             <CircularButton
               onPress={() => navigation.push('Chat')}
-              image={IMAGES.people}
+              image={item.avatar}
               style={style.profileIcon}
               imageStyle={style.profileImage}
             />
             <View style={style.nameContainer}>
-              <Text style={style.p}>Sophia</Text>
+              <Text style={style.p}>{item.name}</Text>
               <View style={style.onlineDot} />
             </View>
           </View>
@@ -44,17 +45,17 @@ const Home = ({navigation}) => {
         rightChildren={
           <CircularButton
             onPress={() => navigation.push('Chat')}
-            image={IMAGES.chat}
+            image={IMAGES.more}
           />
         }
       />
       <View style={style.content}>
         <FlatList
           data={chatMessages}
-          keyExtractor={(item) => String(item.id)}
-          renderItem={({item}) => (
-            <View style={[item.owner ? style.ownerCell : style.otherCell]}>
-              <Text style={style.p}>{item.message}</Text>
+          keyExtractor={({id}) => String(id)}
+          renderItem={({item: each}) => (
+            <View style={[each.owner ? style.ownerCell : style.otherCell]}>
+              <Text style={style.p}>{each.message}</Text>
             </View>
           )}
         />
@@ -65,7 +66,7 @@ const Home = ({navigation}) => {
             placeholder={'Escreva aqui...'}
           />
           <Pressable>
-            <Image source={IMAGES.back} />
+            <Image source={IMAGES.send} />
           </Pressable>
         </View>
       </View>

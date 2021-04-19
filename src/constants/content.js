@@ -18,6 +18,36 @@ export const chatMessages = [
   },
 ];
 
+export const conversations = [
+  {
+    id: '1',
+    avatar: IMAGES.people,
+    name: 'Sophia',
+    lastMessage: {
+      text: 'Oii',
+      hour: '16:12',
+    },
+  },
+  {
+    id: '2',
+    avatar: IMAGES.people2,
+    name: 'Emma',
+    lastMessage: {
+      text: 'Oi!',
+      hour: '12:32',
+    },
+  },
+  {
+    id: '3',
+    avatar: IMAGES.people3,
+    name: 'Ana',
+    lastMessage: {
+      text: 'Quando podemos nos ver?',
+      hour: '14:54',
+    },
+  },
+];
+
 export const persons = [
   {
     id: '1',

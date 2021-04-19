@@ -25,7 +25,7 @@ const Match = ({navigation, route}) => {
         <CircularButton
           style={styles.mt16}
           image={IMAGES.chat}
-          onPress={() => navigation.pop()}
+          onPress={() => navigation.push('Chat', {item})}
         />
       </View>
     </ImageBackground>

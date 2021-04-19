@@ -41,6 +41,12 @@ export const FONTS = {
     fontFamily: 'Sansation',
     fontWeight: 'bold',
   },
+  small: {
+    fontSize: 14,
+    color: COLORS.white,
+    opacity: 0.8,
+    fontFamily: 'Sansation',
+  },
 };
 
 export const SPACING = {
