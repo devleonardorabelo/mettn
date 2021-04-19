@@ -5,7 +5,8 @@ export default StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    paddingVertical: 48,
+    paddingTop: 24,
+    paddingBottom: 48,
   },
   centerButton: {
     marginHorizontal: 16,

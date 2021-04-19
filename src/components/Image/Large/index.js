@@ -13,7 +13,7 @@ const Large = ({image, title, subtitle, onPress}) => {
         source={image}>
         <View style={styles.content}>
           <View style={styles.nameContainer}>
-            <Text style={styles.h1}>{title}</Text>
+            <Text style={styles.h4}>{title}</Text>
             <View style={styles.onlineDot} />
           </View>
           <Text style={styles.p}>{subtitle}</Text>

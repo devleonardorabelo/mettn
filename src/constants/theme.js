@@ -13,6 +13,18 @@ export const COLORS = {
 
 export const FONTS = {
   h1: {
+    fontSize: 48,
+    color: COLORS.white,
+    fontFamily: 'Sansation',
+    fontWeight: 'bold',
+  },
+  h2: {
+    fontSize: 36,
+    color: COLORS.white,
+    fontFamily: 'Sansation',
+    fontWeight: 'bold',
+  },
+  h4: {
     fontSize: 22,
     color: COLORS.white,
     fontFamily: 'Sansation',

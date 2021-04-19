@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import {Platform, StyleSheet} from 'react-native';
 import {COLORS} from '../../../constants/theme';
 
 export default StyleSheet.create({
@@ -21,5 +21,11 @@ export default StyleSheet.create({
   image: {
     maxHeight: 64,
     maxWidth: 64,
+  },
+  absolute: {
+    position: 'absolute',
+    zIndex: 10,
+    left: 24,
+    top: Platform.OS === 'ios' ? 48 : 24,
   },
 });

@@ -4,7 +4,7 @@ export default StyleSheet.create({
   container: {
     paddingTop: Platform.OS === 'ios' ? 48 : 24,
     paddingHorizontal: 24,
-    paddingBottom: 48,
+    paddingBottom: 24,
     flexDirection: 'row',
     width: '100%',
   },

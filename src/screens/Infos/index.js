@@ -17,7 +17,7 @@ const Infos = ({navigation, route}) => {
       <CircularButton
         image={IMAGES.back}
         onPress={() => navigation.pop()}
-        style={styles.backButton}
+        absolute
       />
       <Carousel
         data={item.images}
@@ -53,14 +53,14 @@ const Infos = ({navigation, route}) => {
         />
         <View style={styles.mb16}>
           <View style={styles.nameContainer}>
-            <Text style={styles.h1}>{item.name}</Text>
+            <Text style={styles.h4}>{item.name}</Text>
             <View style={styles.onlineDot} />
           </View>
           <Text style={styles.strong}>{item.distance}</Text>
         </View>
         <Text style={styles.p}>{item.about}</Text>
       </View>
-      <Footer />
+      <Footer centerOnPress={() => navigation.push('Match', {item})} />
     </View>
   );
 };

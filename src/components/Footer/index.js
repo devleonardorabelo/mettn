@@ -5,16 +5,21 @@ import {CircularButton} from '../Button';
 
 import styles from './styles';
 
-const Footer = ({leftOnPress, rightOnPress}) => {
+const Footer = ({leftOnPress, centerOnPress, rightOnPress}) => {
   const [heartActived, setHeartActived] = useState(false);
 
-  const handleButtonOnPress = useCallback((state, value) => state(value), []);
+  const handleButtonOnPress = useCallback((state, value, action) => {
+    state(value);
+    action();
+  }, []);
 
   return (
     <View style={styles.footerContainer}>
       <CircularButton onPress={leftOnPress} image={IMAGES.deny} />
       <CircularButton
-        onPress={() => handleButtonOnPress(setHeartActived, !heartActived)}
+        onPress={() => {
+          handleButtonOnPress(setHeartActived, !heartActived, centerOnPress);
+        }}
         style={styles.centerButton}
         image={heartActived ? IMAGES.full_heart : IMAGES.heart}
         large
