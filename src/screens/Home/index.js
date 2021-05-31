@@ -14,7 +14,12 @@ const Home = ({navigation}) => {
     <View style={style.container}>
       <StatusBar backgroundColor={COLORS.darkPurple} barStyle="light-content" />
       <Header
-        leftChildren={<CircularButton onPress={() => {}} image={IMAGES.back} />}
+        leftChildren={
+          <CircularButton
+            onPress={() => navigation.push('Profile')}
+            image={IMAGES.user}
+          />
+        }
         centerChildren={<Image source={IMAGES.logo} />}
         rightChildren={
           <CircularButton
@@ -31,7 +36,7 @@ const Home = ({navigation}) => {
         data={persons}
         renderItem={({item}) => (
           <LargeImage
-            image={item.image}
+            image={item.avatar}
             title={item.name}
             subtitle={item.distance}
             onPress={() => navigation.push('Infos', {item})}

@@ -9,6 +9,7 @@ export const IMAGES = {
   settings: require('./images/icons/settings.png'),
   send: require('./images/icons/send.png'),
   more: require('./images/icons/more.png'),
+  user: require('./images/icons/user.png'),
 
   people: require('./images/peoples/girl1.png'),
   people2: require('./images/peoples/girl2.png'),

@@ -15,7 +15,7 @@ const Footer = ({leftOnPress, centerOnPress, rightOnPress}) => {
 
   return (
     <View style={styles.footerContainer}>
-      <CircularButton onPress={leftOnPress} image={IMAGES.deny} />
+      <CircularButton onPress={leftOnPress} image={IMAGES.user} />
       <CircularButton
         onPress={() => {
           handleButtonOnPress(setHeartActived, !heartActived, centerOnPress);

@@ -7,6 +7,7 @@ import Infos from './screens/Infos';
 import Chat from './screens/Chat';
 import ChatList from './screens/ChatList';
 import Match from './screens/Match';
+import Profile from './screens/Profile';
 
 const Stack = createSharedElementStackNavigator();
 
@@ -35,6 +36,7 @@ const App = () => {
         <Stack.Screen name="Chat" component={Chat} />
         <Stack.Screen name="Match" component={Match} />
         <Stack.Screen name="ChatList" component={ChatList} />
+        <Stack.Screen name="Profile" component={Profile} />
       </Stack.Navigator>
     </NavigationContainer>
   );

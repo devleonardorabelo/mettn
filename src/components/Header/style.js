@@ -7,6 +7,7 @@ export default StyleSheet.create({
     paddingBottom: 24,
     flexDirection: 'row',
     width: '100%',
+    justifyContent: 'space-between',
   },
   content: {
     width: '33.33333%',

@@ -10,7 +10,7 @@ const Match = ({navigation, route}) => {
   return (
     <ImageBackground
       style={styles.backImage}
-      source={item.image}
+      source={item.avatar}
       imageStyle={{opacity: 0.5}}
       blurRadius={10}>
       <CircularButton

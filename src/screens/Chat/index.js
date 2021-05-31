@@ -11,7 +11,6 @@ import {
 import {IMAGES} from '../../assets';
 
 import {Header, CircularButton} from '../../components';
-import {chatMessages} from '../../constants/content';
 import {COLORS} from '../../constants/theme';
 
 import style from './styles';
@@ -51,7 +50,7 @@ const Home = ({navigation, route}) => {
       />
       <View style={style.content}>
         <FlatList
-          data={chatMessages}
+          data={item.messages}
           keyExtractor={({id}) => String(id)}
           renderItem={({item: each}) => (
             <View style={[each.owner ? style.ownerCell : style.otherCell]}>

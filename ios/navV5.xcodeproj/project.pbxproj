@@ -173,7 +173,6 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				B8B7822752BC20D6F85F2297 /* [CP] Embed Pods Frameworks */,
 				C5F0D375082580C1651E504F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -196,7 +195,6 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				9429AF67A8CADDA11F8F5AF2 /* [CP] Embed Pods Frameworks */,
 				C293BAB641FD53071155B4B4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -279,40 +277,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
-		};
-		9429AF67A8CADDA11F8F5AF2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-navV5/Pods-navV5-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-navV5/Pods-navV5-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-navV5/Pods-navV5-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B8B7822752BC20D6F85F2297 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-navV5-navV5Tests/Pods-navV5-navV5Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-navV5-navV5Tests/Pods-navV5-navV5Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-navV5-navV5Tests/Pods-navV5-navV5Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		C293BAB641FD53071155B4B4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
